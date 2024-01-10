@@ -1,8 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Kanit&display=swap");
 
+@keyframes example {
+  0% {
+    background-color: darkslategray;
+  }
+  50% {
+    background-color: #ff0000;
+  }
+  100% {
+    background-color: darkslategray;
+  }
+}
+
 body {
   background-color: darkslategray;
   height: 100vh;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 
 h1 {
